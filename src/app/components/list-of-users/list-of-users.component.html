@@ -1,0 +1,5 @@
+<div *ngFor="let user of selectedUserList "> 
+   <button type="button" class="btn btn-info" (click)="onUserClick(user)">
+       {{user.name }} Month is :  {{user.birthdate | date:'MMMM'}}
+    </button>
+ </div>

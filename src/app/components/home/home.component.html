@@ -1,0 +1,14 @@
+<div id="home">
+  <div id="groups">
+    <app-groups [getFullListOfUsers]="FullUsersList" (sendUserListByGroup)="onUserList($event)"></app-groups>
+  </div>
+
+  <div id="listOfUsers">
+    <app-list-of-users [selectedUserList]="currentListByGroup" (selectedUser)="onUserDetail($event)">
+    </app-list-of-users>
+  </div>
+
+  <div id="userDetails">
+    <app-user-details [user]="userDetails"></app-user-details>
+  </div>
+</div>

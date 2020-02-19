@@ -1,0 +1,28 @@
+#groups {
+  border: solid black 2px;
+  height: 300px;
+  text-align: center;
+  grid-column: span 12;
+}
+
+#listOfUsers {
+  border: solid black 2px;
+  height: 600px;
+  display: inline-block;
+  text-align: center;
+  grid-column: span 6;
+}
+
+#userDetails {
+  border: solid black 2px;
+  height: 600px;
+  display: inline-block;
+  text-align: center;
+  grid-column: span 6;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: repeat(12 1fr);
+  grid-template-rows: 10% 80%;
+}
